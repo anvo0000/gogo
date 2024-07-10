@@ -3,7 +3,7 @@ I. Common Measures of Vector Similarity
 1. Cosine Similarity (A,B):
     Range from -1 to 1:
         1 => vectors are identical in direction => best match
-       -1 => vectors are diametrically opposed, representing the worst match.
+       -1 => vectors are opposed, representing the worst match.
         0 => vectors are completely dissimilar in terms of direction.
     sample: 
         cat and cat [[1.00]]
