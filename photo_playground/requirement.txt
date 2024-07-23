@@ -1,0 +1,10 @@
+streamlit
+tiktoken
+python-dotenv
+unstructured
+pinecone-client
+pypdf
+sentence_transformers
+open_clip_torch
+langchain-community
+langchain-pinecone
