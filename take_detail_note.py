@@ -37,12 +37,19 @@ def main():
                        layout='centered',
                        initial_sidebar_state='collapsed')
     st.header("Key Notes!")
-    user_input_text = st.text_area('Enter the text: ', height=275)
+    # user_input_text = st.text_area('Enter the text: ', height=275)
 
+    uploaded_file = st.file_uploader("Choose a file", type=['txt'])
+    if uploaded_file is not None:
+        # Read and display file content
+        user_input_text = uploaded_file.read().decode('utf-8')
+        st.text("File Content:")
+        # st.text(user_input_text)
    
     notes_style = st.selectbox('Detail',
                                    ('Detail', 'General'),
                                    index=0)
+    
     submit = st.button("Generate")
     if submit:
         st.write("In progress ...")
